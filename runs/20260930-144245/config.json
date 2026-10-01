@@ -1,0 +1,10 @@
+{
+  "backend": "ollama:llama3.2:3b",
+  "temperature": 0.7,
+  "n_samples": 3,
+  "seed": 0,
+  "max_new_tokens": 64,
+  "prompt_file": "C:\\Users\\anush\\Downloads\\prompt-sensitivity-analyser\\prompt-sensitivity-analyser_project\\data\\prompt_sets.json",
+  "groups": 8,
+  "started": "2026-09-30T14:42:45"
+}

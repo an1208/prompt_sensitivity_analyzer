@@ -1,0 +1,122 @@
+{
+  "groups": [
+    {
+      "id": "fact_photosynthesis",
+      "category": "factual",
+      "variants": [
+        "What is photosynthesis?",
+        "Explain photosynthesis.",
+        "Can you tell me what photosynthesis is?",
+        "Describe the process of photosynthesis in plants.",
+        "In simple terms, how do plants make food from sunlight?"
+      ],
+      "reference": "Photosynthesis is the process by which plants use sunlight, water and carbon dioxide to produce glucose and oxygen."
+    },
+    {
+      "id": "fact_capital",
+      "category": "factual",
+      "variants": [
+        "What is the capital of Australia?",
+        "Which city is Australia's capital?",
+        "Name the capital city of Australia.",
+        "Australia's capital is which city?",
+        "Tell me the capital of Australia."
+      ],
+      "reference": "Canberra is the capital of Australia."
+    },
+    {
+      "id": "reason_train",
+      "category": "reasoning",
+      "variants": [
+        "A train travels 120 km in 2 hours. What is its average speed?",
+        "If a train covers 120 kilometres in two hours, how fast is it going on average?",
+        "What is the average speed of a train that goes 120 km in 2 hours?",
+        "Calculate the mean speed for a train journey of 120 km lasting 2 hours.",
+        "A train takes two hours to travel 120 km. What speed does it maintain on average?"
+      ],
+      "reference": "The average speed is 60 km/h."
+    },
+    {
+      "id": "reason_apples",
+      "category": "reasoning",
+      "variants": [
+        "Tom has 5 apples, buys 3 more, then eats 2. How many apples does he have now?",
+        "Tom starts with 5 apples. He buys 3 more and eats 2. How many are left?",
+        "How many apples does Tom have if he begins with 5, gets 3 more, and then eats 2?",
+        "Tom had five apples, bought three more and ate two. What is his apple count?",
+        "After owning 5 apples, purchasing 3 further ones and consuming 2, how many apples does Tom hold?"
+      ],
+      "reference": "Tom has 6 apples."
+    },
+    {
+      "id": "advice_sleep",
+      "category": "open_ended",
+      "variants": [
+        "How can I improve my sleep quality?",
+        "Give me tips for sleeping better.",
+        "What should I do to get better sleep at night?",
+        "I have trouble sleeping. Any advice?",
+        "List ways to improve the quality of my sleep."
+      ]
+    },
+    {
+      "id": "rag_leave",
+      "category": "rag_style",
+      "variants": [
+        "Context: Employees receive 20 days of paid leave per year. Up to 5 unused days can be carried forward to the next year.\nQuestion: How many unused leave days can be carried forward?",
+        "Context: Employees receive 20 days of paid leave per year. Up to 5 unused days can be carried forward to the next year.\nQuestion: What is the carry-forward limit for unused leave?",
+        "Context: Employees receive 20 days of paid leave per year. Up to 5 unused days can be carried forward to the next year.\nQuestion: Can I carry over leave I did not use, and if so how much?",
+        "Using only the context below, answer the question.\nContext: Employees receive 20 days of paid leave per year. Up to 5 unused days can be carried forward to the next year.\nQuestion: How many leave days may be carried forward?",
+        "Question: How many unused leave days can be carried forward?\nContext: Employees receive 20 days of paid leave per year. Up to 5 unused days can be carried forward to the next year."
+      ],
+      "reference": "Up to 5 unused leave days can be carried forward."
+    },
+    {
+      "id": "rag_refund",
+      "category": "rag_style",
+      "variants": [
+        "Context: Refunds are available within 30 days of purchase with proof of receipt. Digital goods are non-refundable once downloaded.\nQuestion: Can I get a refund for an e-book I already downloaded 10 days ago?",
+        "Context: Refunds are available within 30 days of purchase with proof of receipt. Digital goods are non-refundable once downloaded.\nQuestion: Is a downloaded e-book, bought 10 days ago, refundable?",
+        "Context: Refunds are available within 30 days of purchase with proof of receipt. Digital goods are non-refundable once downloaded.\nQuestion: I downloaded an e-book 10 days back. Will I get my money back?",
+        "Using only the context below, answer the question.\nContext: Refunds are available within 30 days of purchase with proof of receipt. Digital goods are non-refundable once downloaded.\nQuestion: Can a downloaded e-book be refunded after 10 days?",
+        "Question: Can I get a refund for an e-book I already downloaded 10 days ago?\nContext: Refunds are available within 30 days of purchase with proof of receipt. Digital goods are non-refundable once downloaded."
+      ],
+      "reference": "No. Digital goods such as a downloaded e-book are non-refundable once downloaded."
+    },
+    {
+      "id": "summarise_bike_lanes",
+      "category": "summarisation",
+      "variants": [
+        "Summarize in one sentence: The city council voted on Tuesday to build 40 kilometres of new protected bike lanes over the next three years, funded by a transport levy, in order to cut traffic congestion and emissions.",
+        "Give a one-sentence summary of the following text: The city council voted on Tuesday to build 40 kilometres of new protected bike lanes over the next three years, funded by a transport levy, in order to cut traffic congestion and emissions.",
+        "TL;DR in a single sentence: The city council voted on Tuesday to build 40 kilometres of new protected bike lanes over the next three years, funded by a transport levy, in order to cut traffic congestion and emissions.",
+        "Condense this into one sentence: The city council voted on Tuesday to build 40 kilometres of new protected bike lanes over the next three years, funded by a transport levy, in order to cut traffic congestion and emissions.",
+        "In one sentence, what does this text say? The city council voted on Tuesday to build 40 kilometres of new protected bike lanes over the next three years, funded by a transport levy, in order to cut traffic congestion and emissions."
+      ],
+      "reference": "The council approved 40 km of new protected bike lanes, funded by a transport levy, to reduce congestion and emissions."
+    },
+    {
+      "id": "code_explain",
+      "category": "code",
+      "variants": [
+        "Explain what this Python code does: sum(x*x for x in range(5))",
+        "What does the Python expression sum(x*x for x in range(5)) compute?",
+        "Describe the behaviour of `sum(x*x for x in range(5))` in Python.",
+        "Walk me through the Python snippet sum(x*x for x in range(5)).",
+        "What is the result of, and idea behind, sum(x*x for x in range(5)) in Python?"
+      ],
+      "reference": "It sums the squares of 0 to 4, giving 30."
+    },
+    {
+      "id": "list_exercise",
+      "category": "instruction",
+      "variants": [
+        "List three benefits of regular exercise.",
+        "Name 3 benefits of exercising regularly.",
+        "What are three advantages of working out consistently?",
+        "Give me three reasons to exercise regularly.",
+        "Provide three health benefits of regular physical activity."
+      ]
+    }
+  ]
+}

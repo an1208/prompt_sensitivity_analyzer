@@ -1,0 +1,10 @@
+{
+  "backend": "hf:google/flan-t5-base",
+  "temperature": 0.0,
+  "n_samples": 1,
+  "seed": 0,
+  "max_new_tokens": 128,
+  "prompt_file": "C:\\Users\\anush\\Downloads\\prompt-sensitivity-analyser\\prompt-sensitivity-analyser_project\\data\\prompt_sets.json",
+  "groups": 10,
+  "started": "2026-09-30T14:31:52"
+}

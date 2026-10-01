@@ -1,0 +1,1062 @@
+{
+  "config": {
+    "backend": "ollama:qwen2.5:1.5b",
+    "temperature": 0.7,
+    "n_samples": 3,
+    "seed": 0,
+    "max_new_tokens": 64,
+    "prompt_file": "C:\\Users\\anush\\Downloads\\prompt-sensitivity-analyser\\prompt-sensitivity-analyser_project\\data\\prompt_sets.json",
+    "groups": 8,
+    "started": "2026-09-30T15:08:17",
+    "embedder": "sentence-transformers:sentence-transformers/all-MiniLM-L6-v2"
+  },
+  "overall": {
+    "n_groups": 8,
+    "mean_sensitivity": 0.13849312359451654,
+    "median_sensitivity": 0.11865707728347097,
+    "sensitivity_ci95": [
+      0.08924124107717778,
+      0.1954794525841731
+    ],
+    "max_sensitivity": 0.3076569107878224,
+    "mean_between_sim": 0.8615068764054834,
+    "mean_within_sim": 0.9014393104032916,
+    "mean_excess_sensitivity": 0.03993243399780813,
+    "mean_lexical_sim": 0.4501612163702613,
+    "mean_exact_match_rate": 0.02777777777777778,
+    "pooled_prompt_output_spearman": 0.3912398835558389,
+    "mean_reference_spread": 0.09500412808781658
+  },
+  "groups": [
+    {
+      "n_variants": 5,
+      "n_samples": 3,
+      "between_sim": 0.8337634208239665,
+      "sensitivity": 0.16623657917603352,
+      "min_pair_sim": 0.7453291822221532,
+      "std_pair_sim": 0.05656995539418365,
+      "within_sim": 0.8923959973898553,
+      "excess_sensitivity": 0.05863257656588883,
+      "lexical_sim": 0.2939542140409668,
+      "exact_match_rate": 0.0,
+      "length_cv": 0.1035374328443583,
+      "prompt_output_spearman": 0.8666666666666665,
+      "per_variant_mean_sim": [
+        0.8595210850874957,
+        0.8506733170880147,
+        0.8376240958101602,
+        0.8534847340037559,
+        0.7675138721304067
+      ],
+      "most_fragile_variant": 4,
+      "most_robust_variant": 0,
+      "sim_matrix": [
+        [
+          1.0,
+          0.8886098364445111,
+          0.896811639025435,
+          0.891172784860798,
+          0.761490080019239
+        ],
+        [
+          0.8886098364445111,
+          1.0,
+          0.8518792851944622,
+          0.882628897394243,
+          0.7795752493188428
+        ],
+        [
+          0.896811639025435,
+          0.8518792851944622,
+          1.0,
+          0.8564762767985906,
+          0.7453291822221532
+        ],
+        [
+          0.891172784860798,
+          0.882628897394243,
+          0.8564762767985906,
+          1.0,
+          0.7836609769613919
+        ],
+        [
+          0.761490080019239,
+          0.7795752493188428,
+          0.7453291822221532,
+          0.7836609769613919,
+          1.0
+        ]
+      ],
+      "pair_prompt_sim": [
+        0.917454670168476,
+        0.9294291495649591,
+        0.8609881444249274,
+        0.6155476065535795,
+        0.8721383263959431,
+        0.8737619144133414,
+        0.6084807887242824,
+        0.8140906635228667,
+        0.6155079722280303,
+        0.6522507800162645
+      ],
+      "pair_output_sim": [
+        0.8886098364445111,
+        0.896811639025435,
+        0.891172784860798,
+        0.761490080019239,
+        0.8518792851944622,
+        0.882628897394243,
+        0.7795752493188428,
+        0.8564762767985906,
+        0.7453291822221532,
+        0.7836609769613919
+      ],
+      "reference_sim_per_variant": [
+        0.8554490137376879,
+        0.8789045470063801,
+        0.8477129383850212,
+        0.875362047728224,
+        0.8368016737006596
+      ],
+      "reference_sim_mean": 0.8588460441115945,
+      "reference_sim_min": 0.8368016737006596,
+      "reference_sim_spread": 0.04210287330572049,
+      "id": "fact_photosynthesis",
+      "category": "factual",
+      "prompts": [
+        "What is photosynthesis?",
+        "Explain photosynthesis.",
+        "Can you tell me what photosynthesis is?",
+        "Describe the process of photosynthesis in plants.",
+        "In simple terms, how do plants make food from sunlight?"
+      ],
+      "outputs": [
+        [
+          "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy. It is the fundamental basis for life on Earth, as it provides the primary source of food and oxygen for most life forms. The process can be summarized as:\n\n1. Absorption of light energy: Plants absorb light",
+          "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy from the sun into chemical energy stored in sugar molecules. This process occurs primarily in the chloroplasts of plant cells and involves the absorption of light, which is used to convert water and carbon dioxide into glucose and oxygen. \n\nThe general",
+          "Photosynthesis is a process used by plants, algae, and some bacteria to convert light energy into chemical energy. This process occurs in the presence of chlorophyll, which is a pigment found in the chloroplasts of plant cells. During photosynthesis, light energy is absorbed by the chlorophyll, which then causes"
+        ],
+        [
+          "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy, usually from the sun, into chemical energy stored in glucose. This process occurs in the chloroplasts of plant cells and involves two main stages: the light-dependent reactions and the light-independent reactions (also known as the Calvin cycle).",
+          "Photosynthesis is the process by which plants use sunlight, water, and carbon dioxide to produce food. It is a fundamental biological process that is essential for life on Earth. The process of photosynthesis can be broken down into two main stages: the light-dependent reactions and the light-independent reactions, also known as the Calvin cycle",
+          "Photosynthesis is a biological process that occurs in plants, algae, and certain bacteria. It is a crucial process that converts light energy from the sun into chemical energy stored in glucose, which is then used by the plant as a source of food. Here are the key steps of photosynthesis:\n\n1. **Light Absorption"
+        ],
+        [
+          "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy stored in glucose (sugar) molecules. This process is essential for life on Earth as it provides the oxygen we need to breathe and the food that plants use to grow.\n\nKey points about photosynthesis:\n\n1. It",
+          "Certainly! Photosynthesis is a process used by plants, algae, and some bacteria to convert light energy into chemical energy. During photosynthesis, these organisms take in carbon dioxide and water from their environment, and use sunlight to convert these into energy-rich compounds, specifically glucose and oxygen. The carbon dioxide and water molecules are used",
+          "Photosynthesis is a process used by plants, algae, and some bacteria to convert light energy, typically from the sun, into chemical energy that can be used to fuel the organism's activities. This process occurs primarily in the chloroplasts of plant cells and uses the pigment chlorophyll, found in the thylak"
+        ],
+        [
+          "Photosynthesis is a process used by plants to convert light energy into chemical energy, which they can then use to fuel their growth. The process occurs in the chloroplasts of plant cells, and it involves the following steps:\n\n1. Light Absorption: Chlorophyll and other pigments in the chloroplasts absorb",
+          "Photosynthesis is a crucial process in the biology of plants and is the process by which plants produce their own food. The main purpose of photosynthesis is to convert light energy into chemical energy, which is then used to produce glucose (a type of sugar) and oxygen. The process involves the following steps:\n\n1. Light",
+          "Photosynthesis is the process by which plants convert light energy from the sun into chemical energy stored in sugar molecules. This process is crucial for life on Earth as it provides energy for most life forms and also produces oxygen that is essential for respiration in animals.\n\nHere's a step-by-step explanation of the process:\n\n1."
+        ],
+        [
+          "Plants make food from sunlight through a process called photosynthesis. In simple terms, the process can be described as:\n\n1. **Sunlight**: Plants use sunlight as the energy source.\n2. **Water**: They take water from the soil.\n3. **Carbon Dioxide**: They take carbon dioxide from the air",
+          "In simple terms, plants make food from sunlight through a process called photosynthesis. This process helps them grow and survive.",
+          "Plants make food from sunlight through a process called photosynthesis. During photosynthesis, plants use the energy from sunlight to convert water and carbon dioxide from the air into glucose, which they use as food. This process also produces oxygen as a byproduct, which is released into the air. The equation for photosynthesis looks"
+        ]
+      ]
+    },
+    {
+      "n_variants": 5,
+      "n_samples": 3,
+      "between_sim": 0.982962879811418,
+      "sensitivity": 0.017037120188581945,
+      "min_pair_sim": 0.9764626219325252,
+      "std_pair_sim": 0.006859026803869305,
+      "within_sim": 0.9904472223007013,
+      "excess_sensitivity": 0.007484342489283202,
+      "lexical_sim": 0.6907936507936507,
+      "exact_match_rate": 0.22222222222222224,
+      "length_cv": 0.11699579705667049,
+      "prompt_output_spearman": 0.3302891295379082,
+      "per_variant_mean_sim": [
+        0.9854121422450357,
+        0.9812901338682769,
+        0.9794483949276804,
+        0.983251585771062,
+        0.9854121422450357
+      ],
+      "most_fragile_variant": 2,
+      "most_robust_variant": 0,
+      "sim_matrix": [
+        [
+          1.0,
+          0.9786700356679479,
+          0.9764626219325252,
+          0.986515849112747,
+          1.0000000622669225
+        ],
+        [
+          0.9786700356679479,
+          1.0,
+          0.9863570775620644,
+          0.9814633865751472,
+          0.9786700356679479
+        ],
+        [
+          0.9764626219325252,
+          0.9863570775620644,
+          1.0,
+          0.9785112582836071,
+          0.9764626219325252
+        ],
+        [
+          0.986515849112747,
+          0.9814633865751472,
+          0.9785112582836071,
+          1.0,
+          0.986515849112747
+        ],
+        [
+          1.0000000622669225,
+          0.9786700356679479,
+          0.9764626219325252,
+          0.986515849112747,
+          1.0
+        ]
+      ],
+      "pair_prompt_sim": [
+        0.9283662955212536,
+        0.8756586570757963,
+        0.8979030719674255,
+        0.9424409666001906,
+        0.9236345655930213,
+        0.9850544815666425,
+        0.8774513351372368,
+        0.9229144713142206,
+        0.8672380133348138,
+        0.8459992246260606
+      ],
+      "pair_output_sim": [
+        0.9786700356679479,
+        0.9764626219325252,
+        0.986515849112747,
+        1.0000000622669225,
+        0.9863570775620644,
+        0.9814633865751472,
+        0.9786700356679479,
+        0.9785112582836071,
+        0.9764626219325252,
+        0.986515849112747
+      ],
+      "reference_sim_per_variant": [
+        0.992477752006036,
+        0.97497609345708,
+        0.9736423610877306,
+        0.9812545570965151,
+        0.992477752006036
+      ],
+      "reference_sim_mean": 0.9829657031306794,
+      "reference_sim_min": 0.9736423610877306,
+      "reference_sim_spread": 0.01883539091830544,
+      "id": "fact_capital",
+      "category": "factual",
+      "prompts": [
+        "What is the capital of Australia?",
+        "Which city is Australia's capital?",
+        "Name the capital city of Australia.",
+        "Australia's capital is which city?",
+        "Tell me the capital of Australia."
+      ],
+      "outputs": [
+        [
+          "The capital of Australia is Canberra.",
+          "The capital of Australia is Canberra.",
+          "The capital of Australia is Canberra."
+        ],
+        [
+          "Australia's capital city is Canberra.",
+          "Australia's capital is Canberra.",
+          "The capital city of Australia is Canberra."
+        ],
+        [
+          "The capital city of Australia is Canberra.",
+          "The capital city of Australia is Canberra.",
+          "The capital city of Australia is Canberra."
+        ],
+        [
+          "Australia's capital is Canberra.",
+          "The capital of Australia is Canberra.",
+          "Australia's capital city is Canberra."
+        ],
+        [
+          "The capital of Australia is Canberra.",
+          "The capital of Australia is Canberra.",
+          "The capital of Australia is Canberra."
+        ]
+      ]
+    },
+    {
+      "n_variants": 5,
+      "n_samples": 3,
+      "between_sim": 0.9022308718139083,
+      "sensitivity": 0.09776912818609174,
+      "min_pair_sim": 0.8567950520710726,
+      "std_pair_sim": 0.02903477476529859,
+      "within_sim": 0.9472237400924495,
+      "excess_sensitivity": 0.04499286827854121,
+      "lexical_sim": 0.44347243223418553,
+      "exact_match_rate": 0.0,
+      "length_cv": 0.05082894636588678,
+      "prompt_output_spearman": 0.9151515151515152,
+      "per_variant_mean_sim": [
+        0.9226337595621104,
+        0.901015248259998,
+        0.9130768262867233,
+        0.8701773402300861,
+        0.9042511847306243
+      ],
+      "most_fragile_variant": 3,
+      "most_robust_variant": 0,
+      "sim_matrix": [
+        [
+          1.0,
+          0.9267699381437782,
+          0.93983489105343,
+          0.888200449877461,
+          0.9357297591737718
+        ],
+        [
+          0.9267699381437782,
+          1.0,
+          0.9157018840866079,
+          0.8567950520710726,
+          0.9047941187385327
+        ],
+        [
+          0.93983489105343,
+          0.9157018840866079,
+          1.0,
+          0.8780017639842365,
+          0.9187687660226186
+        ],
+        [
+          0.888200449877461,
+          0.8567950520710726,
+          0.8780017639842365,
+          1.0,
+          0.8577120949875743
+        ],
+        [
+          0.9357297591737718,
+          0.9047941187385327,
+          0.9187687660226186,
+          0.8577120949875743,
+          1.0
+        ]
+      ],
+      "pair_prompt_sim": [
+        0.8950925148263796,
+        0.9573606563207695,
+        0.845789593013158,
+        0.9335942824278489,
+        0.9245682069956443,
+        0.7883142386097006,
+        0.9017785709948078,
+        0.8333689416459537,
+        0.9188704197154904,
+        0.7981118744552883
+      ],
+      "pair_output_sim": [
+        0.9267699381437782,
+        0.93983489105343,
+        0.888200449877461,
+        0.9357297591737718,
+        0.9157018840866079,
+        0.8567950520710726,
+        0.9047941187385327,
+        0.8780017639842365,
+        0.9187687660226186,
+        0.8577120949875743
+      ],
+      "reference_sim_per_variant": [
+        0.5841719202585977,
+        0.6169314862351722,
+        0.5715562443174901,
+        0.5428199095035428,
+        0.5698470544649051
+      ],
+      "reference_sim_mean": 0.5770653229559416,
+      "reference_sim_min": 0.5428199095035428,
+      "reference_sim_spread": 0.07411157673162949,
+      "id": "reason_train",
+      "category": "reasoning",
+      "prompts": [
+        "A train travels 120 km in 2 hours. What is its average speed?",
+        "If a train covers 120 kilometres in two hours, how fast is it going on average?",
+        "What is the average speed of a train that goes 120 km in 2 hours?",
+        "Calculate the mean speed for a train journey of 120 km lasting 2 hours.",
+        "A train takes two hours to travel 120 km. What speed does it maintain on average?"
+      ],
+      "outputs": [
+        [
+          "To find the average speed of the train, we can use the formula for average speed:\n\n\\[\n\\text{Average Speed} = \\frac{\\text{Total Distance}}{\\text{Total Time}}\n\\]\n\nGiven:\n- Total Distance = 120 km\n- Total Time = 2 hours\n\nPl",
+          "The average speed is calculated by dividing the distance traveled by the time taken. So, for a train that travels 120 km in 2 hours, the average speed is:\n\n\\[ \\text{Average Speed} = \\frac{\\text{Distance}}{\\text{Time}} \\]\n\n\\[ \\text{Average",
+          "To determine the average speed of the train, we can use the formula for average speed, which is:\n\n\\[\n\\text{Average Speed} = \\frac{\\text{Total Distance}}{\\text{Total Time}}\n\\]\n\nGiven:\n- Total Distance = 120 km\n- Total Time = 2"
+        ],
+        [
+          "To find the average speed of the train, you need to divide the total distance traveled by the total time taken. In this case, the train covers 120 kilometers in 2 hours.\n\nAverage speed = Distance / Time\n\nPlugging in the values, we get:\n\nAverage speed = 120 kilometers",
+          "The average speed is calculated by dividing the distance covered by the time taken. So, if the train covers 120 kilometres in 2 hours, the average speed is:\n\n\\[ \\text{Average Speed} = \\frac{\\text{Distance}}{\\text{Time}} = \\frac{120 \\",
+          "To find the average speed of the train, you need to divide the total distance covered by the total time taken. In this case, the train covers 120 kilometers in 2 hours. \n\nThe average speed \\( V \\) can be calculated as follows:\n\n\\[ V = \\frac{\\text{Distance}}"
+        ],
+        [
+          "To find the average speed of a train, you use the formula:\n\n\\[ \\text{Average Speed} = \\frac{\\text{Total Distance}}{\\text{Total Time}} \\]\n\nGiven that the train travels 120 km in 2 hours, we can substitute these values into the formula:\n\n\\[ \\",
+          "The average speed of a train is calculated by dividing the total distance traveled by the total time taken. \n\nGiven that the train travels 120 km in 2 hours, the average speed \\( v \\) can be calculated as follows:\n\n\\[ v = \\frac{\\text{Distance}}{\\text{Time}}",
+          "To find the average speed of the train, you can use the formula:\n\n\\[ \\text{Average Speed} = \\frac{\\text{Total Distance}}{\\text{Total Time}} \\]\n\nGiven that the train travels 120 km in 2 hours, you can substitute the values into the formula:\n\n\\["
+        ],
+        [
+          "To calculate the mean speed for a train journey, you use the formula:\n\n\\[ \\text{Mean Speed} = \\frac{\\text{Total Distance}}{\\text{Total Time}} \\]\n\nGiven:\n- Total Distance = 120 km\n- Total Time = 2 hours\n\nSubstitute the values into",
+          "The mean speed (average speed) of a journey is calculated by dividing the total distance traveled by the total time taken. In this case, the train travels 120 km in 2 hours.\n\nMean speed = Total distance / Total time\nMean speed = 120 km / 2 hours\nMean",
+          "To calculate the mean speed for a train journey, you can use the formula:\n\n\\[ \\text{Mean Speed} = \\frac{\\text{Total Distance}}{\\text{Total Time}} \\]\n\nGiven:\n- Total Distance = 120 km\n- Total Time = 2 hours\n\nNow, plug these"
+        ],
+        [
+          "To find the average speed of the train, we can use the formula for speed, which is given by:\n\n\\[ \\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}} \\]\n\nIn this problem, the distance traveled by the train is 120 km and the time taken is",
+          "To find the average speed of the train, we use the formula for speed, which is the distance traveled divided by the time taken. The formula is:\n\n\\[ \\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}} \\]\n\nIn this problem, the train travels 120 km",
+          "To find the average speed of the train, we can use the formula for speed, which is given by:\n\n\\[ \\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}} \\]\n\nHere, the distance traveled is 120 km and the time taken is 2 hours. Pl"
+        ]
+      ]
+    },
+    {
+      "n_variants": 5,
+      "n_samples": 3,
+      "between_sim": 0.8814825653218634,
+      "sensitivity": 0.11851743467813658,
+      "min_pair_sim": 0.8476027682900777,
+      "std_pair_sim": 0.02439984457925626,
+      "within_sim": 0.8942911656212253,
+      "excess_sensitivity": 0.012808600299361927,
+      "lexical_sim": 0.39915561465846816,
+      "exact_match_rate": 0.0,
+      "length_cv": 0.04767852048597423,
+      "prompt_output_spearman": 0.01818181818181818,
+      "per_variant_mean_sim": [
+        0.9058722529638437,
+        0.8716809527688203,
+        0.8663155254228443,
+        0.8761396444431246,
+        0.8874044510106838
+      ],
+      "most_fragile_variant": 2,
+      "most_robust_variant": 0,
+      "sim_matrix": [
+        [
+          1.0,
+          0.9117729327174958,
+          0.8898276678414752,
+          0.8992244986262354,
+          0.9226639126701676
+        ],
+        [
+          0.9117729327174958,
+          1.0,
+          0.8476027682900777,
+          0.8484008454231814,
+          0.8789472646445263
+        ],
+        [
+          0.8898276678414752,
+          0.8476027682900777,
+          1.0,
+          0.8683791362774324,
+          0.8594525292823921
+        ],
+        [
+          0.8992244986262354,
+          0.8484008454231814,
+          0.8683791362774324,
+          1.0,
+          0.8885540974456491
+        ],
+        [
+          0.9226639126701676,
+          0.8789472646445263,
+          0.8594525292823921,
+          0.8885540974456491,
+          1.0
+        ]
+      ],
+      "pair_prompt_sim": [
+        0.9584020424927397,
+        0.9380126716039304,
+        0.9350267095993777,
+        0.8834848741553543,
+        0.9357843623631392,
+        0.912672573192979,
+        0.8990485823819075,
+        0.9244101504036107,
+        0.9029159523366442,
+        0.87857137150808
+      ],
+      "pair_output_sim": [
+        0.9117729327174958,
+        0.8898276678414752,
+        0.8992244986262354,
+        0.9226639126701676,
+        0.8476027682900777,
+        0.8484008454231814,
+        0.8789472646445263,
+        0.8683791362774324,
+        0.8594525292823921,
+        0.8885540974456491
+      ],
+      "reference_sim_per_variant": [
+        0.7744184388997134,
+        0.7262437504958855,
+        0.7788162631990142,
+        0.7905603948793088,
+        0.7521045247175677
+      ],
+      "reference_sim_mean": 0.764428674438298,
+      "reference_sim_min": 0.7262437504958855,
+      "reference_sim_spread": 0.06431664438342333,
+      "id": "reason_apples",
+      "category": "reasoning",
+      "prompts": [
+        "Tom has 5 apples, buys 3 more, then eats 2. How many apples does he have now?",
+        "Tom starts with 5 apples. He buys 3 more and eats 2. How many are left?",
+        "How many apples does Tom have if he begins with 5, gets 3 more, and then eats 2?",
+        "Tom had five apples, bought three more and ate two. What is his apple count?",
+        "After owning 5 apples, purchasing 3 further ones and consuming 2, how many apples does Tom hold?"
+      ],
+      "outputs": [
+        [
+          "Tom initially has 5 apples. He buys 3 more, so he has:\n\n5 + 3 = 8 apples\n\nThen he eats 2, so he has:\n\n8 - 2 = 6 apples\n\nNow, Tom has 6 apples.",
+          "Let's break down the problem step by step:\n\n1. Tom starts with 5 apples.\n2. He buys 3 more apples. Now he has:\n   5 + 3 = 8 apples.\n3. He eats 2 apples. Now he has:\n   8 - 2 = 6",
+          "Tom initially has 5 apples. He buys 3 more, so he has 5 + 3 = 8 apples. Then he eats 2, so he has 8 - 2 = 6 apples left."
+        ],
+        [
+          "Tom starts with 5 apples. He buys 3 more, so he has:\n\n5 + 3 = 8 apples\n\nThen he eats 2, so he has:\n\n8 - 2 = 6 apples left.",
+          "Let's break down the problem step by step:\n\n1. Tom starts with 5 apples.\n2. He buys 3 more apples.\n   - We add these to the initial 5 apples: 5 + 3 = 8 apples.\n3. He eats 2 apples.\n   - We subtract these",
+          "Tom starts with 5 apples. He buys 3 more, so he has:\n\n\\[ 5 + 3 = 8 \\text{ apples} \\]\n\nThen he eats 2 apples, so he is left with:\n\n\\[ 8 - 2 = 6 \\text{ apples} \\]\n\nTherefore,"
+        ],
+        [
+          "Tom starts with 5 apples. He gets 3 more, so he has:\n\n5 + 3 = 8 apples.\n\nThen he eats 2 apples, so he has:\n\n8 - 2 = 6 apples left.",
+          "Let's break it down step by step:\n\n1. Tom starts with 5 apples.\n2. He gets 3 more apples. Now he has 5 + 3 = 8 apples.\n3. He eats 2 apples. Now he has 8 - 2 = 6 apples.\n\nSo, Tom",
+          "To determine how many apples Tom has after his actions, we can follow these steps:\n\n1. Start with the initial number of apples Tom has, which is 5.\n2. Add the number of apples he receives, which is 3.\n3. Subtract the number of apples he eats, which is 2."
+        ],
+        [
+          "Tom initially had 5 apples. He bought 3 more, so he had:\n\n5 + 3 = 8 apples\n\nThen he ate 2, so he had:\n\n8 - 2 = 6 apples\n\nTherefore, Tom's apple count is 6.",
+          "To determine Tom's apple count, we can break down the problem step by step:\n\n1. Tom initially had 5 apples.\n2. He bought 3 more apples.\n3. He ate 2 apples.\n\nFirst, we add the apples he bought to his initial amount:\n\\[ 5 + 3 =",
+          "Tom's initial apple count was 5. He bought 3 more, so he had 5 + 3 = 8 apples. After eating 2, he was left with 8 - 2 = 6 apples."
+        ],
+        [
+          "Tom originally owned 5 apples. After purchasing 3 more, he had a total of:\n\n5 (original) + 3 (purchased) = 8 apples\n\nThen, he ate 2 of them:\n\n8 (total after purchase) - 2 (eaten) = 6 apples\n\nSo,",
+          "Let's break it down step by step:\n\n1. Tom initially has 5 apples.\n2. He purchases 3 more apples, so now he has \\(5 + 3 = 8\\) apples.\n3. He then consumes 2 apples, leaving him with \\(8 - 2 = 6\\) apples",
+          "Tom starts with 5 apples. He then buys 3 more, making his total 5 + 3 = 8 apples. After consuming 2, he is left with 8 - 2 = 6 apples. Therefore, Tom has 6 apples remaining."
+        ]
+      ]
+    },
+    {
+      "n_variants": 5,
+      "n_samples": 3,
+      "between_sim": 0.8123543472430116,
+      "sensitivity": 0.1876456527569884,
+      "min_pair_sim": 0.695471972287503,
+      "std_pair_sim": 0.08970087173739448,
+      "within_sim": 0.8383855748518897,
+      "excess_sensitivity": 0.026031227608878105,
+      "lexical_sim": 0.5363901447842002,
+      "exact_match_rate": 0.0,
+      "length_cv": 0.008607017745082832,
+      "prompt_output_spearman": 0.6606060606060605,
+      "per_variant_mean_sim": [
+        0.8402040445442587,
+        0.8235372374134102,
+        0.8455339338077958,
+        0.704385308294717,
+        0.8481112121548757
+      ],
+      "most_fragile_variant": 3,
+      "most_robust_variant": 4,
+      "sim_matrix": [
+        [
+          1.0,
+          0.8518657626290301,
+          0.8965574771355761,
+          0.7045947505546325,
+          0.907798187857796
+        ],
+        [
+          0.8518657626290301,
+          1.0,
+          0.8651364303843212,
+          0.695471972287503,
+          0.881674784352787
+        ],
+        [
+          0.8965574771355761,
+          0.8651364303843212,
+          1.0,
+          0.7174722308195494,
+          0.9029695968917366
+        ],
+        [
+          0.7045947505546325,
+          0.695471972287503,
+          0.7174722308195494,
+          1.0,
+          0.7000022795171833
+        ],
+        [
+          0.907798187857796,
+          0.881674784352787,
+          0.9029695968917366,
+          0.7000022795171833,
+          1.0
+        ]
+      ],
+      "pair_prompt_sim": [
+        0.8196863671290722,
+        0.8219161313717167,
+        0.7409973768911646,
+        0.9136015657388057,
+        0.8241799379044604,
+        0.7846985510213262,
+        0.8436118528786261,
+        0.7366549432886269,
+        0.7733123158101611,
+        0.6965733187604868
+      ],
+      "pair_output_sim": [
+        0.8518657626290301,
+        0.8965574771355761,
+        0.7045947505546325,
+        0.907798187857796,
+        0.8651364303843212,
+        0.695471972287503,
+        0.881674784352787,
+        0.7174722308195494,
+        0.9029695968917366,
+        0.7000022795171833
+      ],
+      "id": "advice_sleep",
+      "category": "open_ended",
+      "prompts": [
+        "How can I improve my sleep quality?",
+        "Give me tips for sleeping better.",
+        "What should I do to get better sleep at night?",
+        "I have trouble sleeping. Any advice?",
+        "List ways to improve the quality of my sleep."
+      ],
+      "outputs": [
+        [
+          "Improving sleep quality can be achieved through several effective strategies. Here are some tips that you can consider:\n\n1. Establish a consistent sleep schedule: Go to bed and wake up at the same time every day, even on weekends. This helps regulate your body's internal clock and ensures that your body knows when it's time",
+          "Improving your sleep quality can significantly enhance your overall health and well-being. Here are some strategies to help you achieve better sleep:\n\n1. **Establish a Consistent Sleep Schedule**: Try to go to bed and wake up at the same time every day, even on weekends. This helps regulate your body's internal clock.",
+          "Improving sleep quality can be achieved through several effective methods:\n\n1. Establish a consistent sleep schedule: Go to bed and wake up at the same time every day, even on weekends.\n\n2. Create a relaxing sleep environment: Ensure your bedroom is dark, quiet, and cool. Use blackout curtains, earplugs,"
+        ],
+        [
+          "Certainly! Here are some tips for improving your sleep quality:\n\n1. **Establish a Sleep Routine**: Go to bed and wake up at the same time every day, even on weekends. This helps regulate your body's internal clock.\n\n2. **Create a Relaxing Sleep Environment**: Make sure your bedroom is quiet, cool",
+          "Sleep is essential for our health and well-being. Here are some tips for getting better sleep:\n\n1. Stick to a regular sleep schedule: Go to bed and wake up at the same time every day, even on weekends. This helps regulate your body's internal clock and can improve your overall sleep quality.\n\n2. Create",
+          "Improving your sleep quality can significantly enhance your overall well-being. Here are some tips to help you sleep better:\n\n1. **Establish a Regular Sleep Schedule**: Go to bed and wake up at the same time every day, even on weekends. This helps regulate your body's internal clock, making it easier to fall asleep"
+        ],
+        [
+          "Getting better sleep can significantly improve your overall health and quality of life. Here are some effective strategies to help you achieve better sleep:\n\n1. **Establish a Regular Sleep Schedule**: Go to bed and wake up at the same time every day, even on weekends. This helps regulate your body's internal clock and improves sleep quality",
+          "Here are some general tips that might help you improve your sleep quality:\n\n1. Establish a consistent sleep schedule: Go to bed and wake up at the same time every day, even on weekends. This helps regulate your body's internal clock.\n\n2. Create a sleep-conducive environment: Make sure your sleeping area is",
+          "To improve your sleep quality, consider the following tips:\n\n1. **Establish a Consistent Sleep Routine**: Go to bed and wake up at the same time every day, even on weekends. This helps regulate your body's internal clock.\n\n2. **Create a Relaxing Sleep Environment**: Ensure your bedroom is conducive to sleep"
+        ],
+        [
+          "I'm sorry to hear that you're having trouble sleeping. Here are a few tips that might help:\n\n1. Establish a regular sleep schedule: Try to go to bed and wake up at the same time every day, even on weekends. This can help regulate your body's sleep-wake cycle.\n\n2. Create a",
+          "Sleeping well is important for your overall health and well-being. Here are a few tips that might help you improve your sleep quality:\n\n1. Establish a consistent sleep schedule: Try to go to bed and wake up at the same time every day, even on weekends. This can help regulate your body's internal clock and",
+          "I understand that sleep can be difficult sometimes. Here are a few tips that might help you:\n\n1. Establish a regular sleep schedule: Try to go to bed and wake up at the same time every day, even on weekends. This can help regulate your body's internal clock.\n\n2. Create a relaxing bedtime routine:"
+        ],
+        [
+          "Improving the quality of your sleep can significantly enhance your overall health and well-being. Here are several effective strategies to help you get better sleep:\n\n1. **Establish a Consistent Sleep Schedule**:\n   - Go to bed and wake up at the same time every day, including weekends. This helps regulate your body's",
+          "To improve the quality of your sleep, you can try the following methods:\n\n1. Establish a consistent sleep schedule: Go to bed and wake up at the same time every day, even on weekends. This helps regulate your body's internal clock and can improve sleep quality.\n\n2. Create a relaxing bedtime routine: Develop a",
+          "Improving the quality of your sleep can significantly enhance your overall health and well-being. Here are several effective ways to improve your sleep quality:\n\n1. **Establish a Regular Sleep Schedule**:\n   - Go to bed and wake up at the same time every day, even on weekends. This helps regulate your body's internal"
+        ]
+      ]
+    },
+    {
+      "n_variants": 5,
+      "n_samples": 3,
+      "between_sim": 0.6923430892121776,
+      "sensitivity": 0.3076569107878224,
+      "min_pair_sim": 0.5313869561920482,
+      "std_pair_sim": 0.08540381853542701,
+      "within_sim": 0.7931961254421804,
+      "excess_sensitivity": 0.10085303623000286,
+      "lexical_sim": 0.2837027840496392,
+      "exact_match_rate": 0.0,
+      "length_cv": 0.712779418617571,
+      "prompt_output_spearman": 0.09090909090909088,
+      "per_variant_mean_sim": [
+        0.6008265303770858,
+        0.725269872156163,
+        0.6776864522819864,
+        0.712202991974666,
+        0.7457295992709867
+      ],
+      "most_fragile_variant": 0,
+      "most_robust_variant": 4,
+      "sim_matrix": [
+        [
+          1.0,
+          0.588202028148511,
+          0.5313869561920482,
+          0.6299995284391886,
+          0.6537176087285955
+        ],
+        [
+          0.588202028148511,
+          1.0,
+          0.7362996943825062,
+          0.772439682905654,
+          0.8041380831879812
+        ],
+        [
+          0.5313869561920482,
+          0.7362996943825062,
+          1.0,
+          0.682184604969921,
+          0.7608745535834706
+        ],
+        [
+          0.6299995284391886,
+          0.772439682905654,
+          0.682184604969921,
+          1.0,
+          0.7641881515838997
+        ],
+        [
+          0.6537176087285955,
+          0.8041380831879812,
+          0.7608745535834706,
+          0.7641881515838997,
+          1.0
+        ]
+      ],
+      "pair_prompt_sim": [
+        0.9109353411880674,
+        0.8410053128387285,
+        0.9625479636602952,
+        0.9834720551452164,
+        0.8564148988938702,
+        0.8776626876850743,
+        0.9234662577765567,
+        0.7922170491267027,
+        0.8514247316184352,
+        0.9461114936023626
+      ],
+      "pair_output_sim": [
+        0.588202028148511,
+        0.5313869561920482,
+        0.6299995284391886,
+        0.6537176087285955,
+        0.7362996943825062,
+        0.772439682905654,
+        0.8041380831879812,
+        0.682184604969921,
+        0.7608745535834706,
+        0.7641881515838997
+      ],
+      "reference_sim_per_variant": [
+        0.6586475584241663,
+        0.8934015930500956,
+        0.7700300218928389,
+        0.8684880345666338,
+        0.8560555796151026
+      ],
+      "reference_sim_mean": 0.8093245575097674,
+      "reference_sim_min": 0.6586475584241663,
+      "reference_sim_spread": 0.23475403462592925,
+      "id": "rag_leave",
+      "category": "rag_style",
+      "prompts": [
+        "Context: Employees receive 20 days of paid leave per year. Up to 5 unused days can be carried forward to the next year.\nQuestion: How many unused leave days can be carried forward?",
+        "Context: Employees receive 20 days of paid leave per year. Up to 5 unused days can be carried forward to the next year.\nQuestion: What is the carry-forward limit for unused leave?",
+        "Context: Employees receive 20 days of paid leave per year. Up to 5 unused days can be carried forward to the next year.\nQuestion: Can I carry over leave I did not use, and if so how much?",
+        "Using only the context below, answer the question.\nContext: Employees receive 20 days of paid leave per year. Up to 5 unused days can be carried forward to the next year.\nQuestion: How many leave days may be carried forward?",
+        "Question: How many unused leave days can be carried forward?\nContext: Employees receive 20 days of paid leave per year. Up to 5 unused days can be carried forward to the next year."
+      ],
+      "outputs": [
+        [
+          "5",
+          "Employees can carry forward up to 5 unused paid leave days to the next year.",
+          "Based on the information provided, the answer is 5 unused leave days can be carried forward to the next year."
+        ],
+        [
+          "The carry-forward limit for unused leave is 5 days.",
+          "The carry-forward limit for unused leave is 5 days.",
+          "The carry-forward limit for unused leave is 5 days."
+        ],
+        [
+          "Yes, you can carry over unused leave days. If you have not used any of the 20 days of paid leave in a given year, you can carry forward up to 5 unused days to the next year. This means you can carry over up to 5 of the 20 days of unused leave",
+          "Yes, you can carry over unused paid leave from one year to the next. According to the information provided, up to 5 unused days of leave can be carried forward to the following year. Therefore, if you have any unused days from the current year that you did not use, they can be carried forward to the",
+          "Yes, you can carry over unused leave days. If you have unused days left over from the year, you can carry them forward to the next year. However, you cannot carry forward more than 5 unused days."
+        ],
+        [
+          "5 leave days may be carried forward.",
+          "Employees may carry forward up to 5 unused leave days.",
+          "Up to 5 unused days can be carried forward to the next year."
+        ],
+        [
+          "Based on the context provided, employees can carry forward a maximum of 5 unused leave days from the current year to the next year.",
+          "Under the given rules, employees can carry forward a maximum of 5 unused days of paid leave to the following year. This allowance allows employees to utilize the unused days from the previous year towards the new year's leave entitlement.",
+          "Based on the information provided, the maximum number of unused leave days that can be carried forward is:\n\n5 unused days."
+        ]
+      ]
+    },
+    {
+      "n_variants": 5,
+      "n_samples": 3,
+      "between_sim": 0.8812032801111946,
+      "sensitivity": 0.11879671988880536,
+      "min_pair_sim": 0.8408703850237389,
+      "std_pair_sim": 0.024979853710530846,
+      "within_sim": 0.9471921214705583,
+      "excess_sensitivity": 0.06598884135936367,
+      "lexical_sim": 0.3361085387208275,
+      "exact_match_rate": 0.0,
+      "length_cv": 0.3561519332693174,
+      "prompt_output_spearman": 0.8424242424242423,
+      "per_variant_mean_sim": [
+        0.9032796347996335,
+        0.8649507149457571,
+        0.8648306739807976,
+        0.884898181340845,
+        0.8880571954889398
+      ],
+      "most_fragile_variant": 2,
+      "most_robust_variant": 0,
+      "sim_matrix": [
+        [
+          1.0,
+          0.8903786122495762,
+          0.8958401806747914,
+          0.9064360463678324,
+          0.9204636999063344
+        ],
+        [
+          0.8903786122495762,
+          1.0,
+          0.8408703850237389,
+          0.8699215163768477,
+          0.8586323461328663
+        ],
+        [
+          0.8958401806747914,
+          0.8408703850237389,
+          1.0,
+          0.856357278463401,
+          0.866254851761259
+        ],
+        [
+          0.9064360463678324,
+          0.8699215163768477,
+          0.856357278463401,
+          1.0,
+          0.9068778841552992
+        ],
+        [
+          0.9204636999063344,
+          0.8586323461328663,
+          0.866254851761259,
+          0.9068778841552992,
+          1.0
+        ]
+      ],
+      "pair_prompt_sim": [
+        0.9471563904400585,
+        0.9346333890794509,
+        0.9504574849734441,
+        0.9903554438946323,
+        0.9229305207826308,
+        0.9460848325528127,
+        0.9332430885096856,
+        0.9211730255416554,
+        0.9242748424350503,
+        0.9439429516388226
+      ],
+      "pair_output_sim": [
+        0.8903786122495762,
+        0.8958401806747914,
+        0.9064360463678324,
+        0.9204636999063344,
+        0.8408703850237389,
+        0.8699215163768477,
+        0.8586323461328663,
+        0.856357278463401,
+        0.866254851761259,
+        0.9068778841552992
+      ],
+      "reference_sim_per_variant": [
+        0.8181057959048069,
+        0.8633941686700036,
+        0.7349751091584767,
+        0.7660001082839933,
+        0.6982922077097973
+      ],
+      "reference_sim_mean": 0.7761534779454156,
+      "reference_sim_min": 0.6982922077097973,
+      "reference_sim_spread": 0.16510196096020635,
+      "id": "rag_refund",
+      "category": "rag_style",
+      "prompts": [
+        "Context: Refunds are available within 30 days of purchase with proof of receipt. Digital goods are non-refundable once downloaded.\nQuestion: Can I get a refund for an e-book I already downloaded 10 days ago?",
+        "Context: Refunds are available within 30 days of purchase with proof of receipt. Digital goods are non-refundable once downloaded.\nQuestion: Is a downloaded e-book, bought 10 days ago, refundable?",
+        "Context: Refunds are available within 30 days of purchase with proof of receipt. Digital goods are non-refundable once downloaded.\nQuestion: I downloaded an e-book 10 days back. Will I get my money back?",
+        "Using only the context below, answer the question.\nContext: Refunds are available within 30 days of purchase with proof of receipt. Digital goods are non-refundable once downloaded.\nQuestion: Can a downloaded e-book be refunded after 10 days?",
+        "Question: Can I get a refund for an e-book I already downloaded 10 days ago?\nContext: Refunds are available within 30 days of purchase with proof of receipt. Digital goods are non-refundable once downloaded."
+      ],
+      "outputs": [
+        [
+          "No, once a digital good is downloaded, it is considered non-refundable. So, for an e-book that you downloaded 10 days ago, you cannot get a refund.",
+          "According to the given context, digital goods (such as e-books) are non-refundable once downloaded. Therefore, you cannot get a refund for an e-book you have already downloaded 10 days ago.",
+          "No, once you have downloaded a digital good, it is considered non-refundable. Therefore, you cannot get a refund for an e-book you have already downloaded 10 days ago."
+        ],
+        [
+          "No, a downloaded e-book bought 10 days ago is non-refundable. According to the provided context, digital goods are non-refundable once downloaded.",
+          "Yes, a downloaded e-book, bought 10 days ago, is refundable within the 30-day window of purchase with proof of receipt. However, digital goods are non-refundable once downloaded, so a refund would not be possible for a downloaded e-book.",
+          "No, an e-book that has been downloaded and is within 30 days of purchase is non-refundable. The context states that refunds are available within 30 days of purchase with proof of receipt. Since the purchase was 10 days ago, the e-book is outside this 30-day period"
+        ],
+        [
+          "No, you will not be able to get your money back for the e-book you downloaded 10 days ago. According to the provided context, digital goods are non-refundable once they are downloaded. Therefore, the e-book you downloaded 10 days ago is also non-refundable.",
+          "According to the given context, you will not be able to get your money back for the digital goods you downloaded 10 days ago. The context states that digital goods are non-refundable once downloaded. Therefore, you would not be eligible for a refund after downloading the e-book 10 days ago.",
+          "No, you will not be able to get your money back for the e-book you downloaded 10 days ago. According to the provided context, digital goods are non-refundable once downloaded. Therefore, since you downloaded the e-book 10 days ago, you would not be able to get your money back"
+        ],
+        [
+          "No, a downloaded e-book cannot be refunded after 10 days.",
+          "No, a downloaded e-book cannot be refunded after 10 days. The context states that digital goods are non-refundable once downloaded.",
+          "No, a downloaded e-book cannot be refunded after 10 days."
+        ],
+        [
+          "Yes, you can get a refund for an e-book you have already downloaded 10 days ago. The refund policy states that refunds are available within 30 days of purchase with proof of receipt. Since you downloaded the e-book 10 days ago, which is well within the 30-day window,",
+          "The e-book you downloaded 10 days ago is considered a digital good and is non-refundable once downloaded. Therefore, you cannot get a refund for it.",
+          "Based on the information provided, you cannot get a refund for an e-book you have already downloaded 10 days ago. The context clearly states that refunds are available within 30 days of purchase with proof of receipt, and digital goods are non-refundable once downloaded. Therefore, even though you purchased the e"
+        ]
+      ]
+    },
+    {
+      "n_variants": 5,
+      "n_samples": 3,
+      "between_sim": 0.9057145569063276,
+      "sensitivity": 0.09428544309367237,
+      "min_pair_sim": 0.8599935379276474,
+      "std_pair_sim": 0.03458799749784308,
+      "within_sim": 0.9083825360574729,
+      "excess_sensitivity": 0.00266797915114525,
+      "lexical_sim": 0.6177123516801523,
+      "exact_match_rate": 0.0,
+      "length_cv": 0.12329281078205861,
+      "prompt_output_spearman": 0.32121212121212117,
+      "per_variant_mean_sim": [
+        0.9171149000327843,
+        0.9069432639069666,
+        0.9153337021339469,
+        0.9231995935652182,
+        0.8659813248927228
+      ],
+      "most_fragile_variant": 4,
+      "most_robust_variant": 3,
+      "sim_matrix": [
+        [
+          1.0,
+          0.9192882252348242,
+          0.9378518223194808,
+          0.9512349006218526,
+          0.8600846519549794
+        ],
+        [
+          0.9192882252348242,
+          1.0,
+          0.9141927800560963,
+          0.9213558730275686,
+          0.8729361773093769
+        ],
+        [
+          0.9378518223194808,
+          0.9141927800560963,
+          1.0,
+          0.9492966682325632,
+          0.8599935379276474
+        ],
+        [
+          0.9512349006218526,
+          0.9213558730275686,
+          0.9492966682325632,
+          1.0,
+          0.8709109323788877
+        ],
+        [
+          0.8600846519549794,
+          0.8729361773093769,
+          0.8599935379276474,
+          0.8709109323788877,
+          1.0
+        ]
+      ],
+      "pair_prompt_sim": [
+        0.8889018474010952,
+        0.9857868978992284,
+        0.9649184750555367,
+        0.9094610080482244,
+        0.8813763057460405,
+        0.8885018169401,
+        0.9034087523457918,
+        0.9585460651625588,
+        0.9096092410359675,
+        0.9037145223624923
+      ],
+      "pair_output_sim": [
+        0.9192882252348242,
+        0.9378518223194808,
+        0.9512349006218526,
+        0.8600846519549794,
+        0.9141927800560963,
+        0.9213558730275686,
+        0.8729361773093769,
+        0.9492966682325632,
+        0.8599935379276474,
+        0.8709109323788877
+      ],
+      "reference_sim_per_variant": [
+        0.8669678216687089,
+        0.8530811942998202,
+        0.8720974010464676,
+        0.8894272347811146,
+        0.8236208190916129
+      ],
+      "reference_sim_mean": 0.8610388941775449,
+      "reference_sim_min": 0.8236208190916129,
+      "reference_sim_spread": 0.06580641568950174,
+      "id": "summarise_bike_lanes",
+      "category": "summarisation",
+      "prompts": [
+        "Summarize in one sentence: The city council voted on Tuesday to build 40 kilometres of new protected bike lanes over the next three years, funded by a transport levy, in order to cut traffic congestion and emissions.",
+        "Give a one-sentence summary of the following text: The city council voted on Tuesday to build 40 kilometres of new protected bike lanes over the next three years, funded by a transport levy, in order to cut traffic congestion and emissions.",
+        "TL;DR in a single sentence: The city council voted on Tuesday to build 40 kilometres of new protected bike lanes over the next three years, funded by a transport levy, in order to cut traffic congestion and emissions.",
+        "Condense this into one sentence: The city council voted on Tuesday to build 40 kilometres of new protected bike lanes over the next three years, funded by a transport levy, in order to cut traffic congestion and emissions.",
+        "In one sentence, what does this text say? The city council voted on Tuesday to build 40 kilometres of new protected bike lanes over the next three years, funded by a transport levy, in order to cut traffic congestion and emissions."
+      ],
+      "outputs": [
+        [
+          "The city council voted to build 40 kilometers of new protected bike lanes over the next three years, funded by a transport levy, to reduce traffic congestion and emissions.",
+          "The city council has approved a plan to construct 40 kilometers of protected bike lanes over three years, funded by a transportation levy, to reduce traffic congestion and emissions.",
+          "The city council approved a three-year plan to construct 40 kilometers of protected bike lanes in the next three years, funded by a transportation levy, to address traffic congestion and emissions."
+        ],
+        [
+          "The city council voted to build new protected bike lanes in the next three years, funded by a transport levy, to address traffic congestion and emissions.",
+          "The city council has approved plans to construct new bike lanes totaling 40 kilometers over the next three years as part of a $50 million project funded by a transport levy to address traffic congestion and emissions.",
+          "The city council approved a plan to construct 40 kilometers of protected bike lanes over the next three years, funded by a transport levy, with the goal of reducing traffic congestion and emissions."
+        ],
+        [
+          "The city council approved a plan to build 40 kilometers of new protected bike lanes over three years, funded by a transportation levy, to reduce traffic congestion and emissions.",
+          "The city council voted to build 40 kilometers of new protected bike lanes over three years with funding from a transport levy to reduce traffic congestion and emissions.",
+          "The city council approved a plan to build 40 km of bike lanes over three years with funds from a transport levy to reduce traffic congestion and emissions."
+        ],
+        [
+          "The city council approved a plan to build 40 kilometers of new protected bike lanes over three years, funded by a transport levy, to reduce traffic congestion and emissions.",
+          "The city council voted to build 40 km of new protected bike lanes over three years, funded by a transport levy, to address traffic congestion and emissions.",
+          "The city council approved a plan to build 40 kilometers of protected bike lanes over three years through a transport levy to reduce traffic congestion and emissions."
+        ],
+        [
+          "The city council approved a plan to build new bike lanes over the next three years to improve traffic congestion and emissions.",
+          "The city council is planning to build new protected bike lanes over the next three years to reduce traffic congestion and emissions.",
+          "The city council voted to build new protected bike lanes, funded by a transport levy, to reduce traffic congestion and emissions."
+        ]
+      ]
+    }
+  ]
+}

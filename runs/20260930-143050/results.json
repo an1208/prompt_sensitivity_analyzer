@@ -1,0 +1,1312 @@
+{
+  "config": {
+    "backend": "mock",
+    "temperature": 0.7,
+    "n_samples": 3,
+    "seed": 0,
+    "max_new_tokens": 64,
+    "prompt_file": "C:\\Users\\anush\\Downloads\\prompt-sensitivity-analyser\\prompt-sensitivity-analyser_project\\data\\prompt_sets.json",
+    "groups": 10,
+    "started": "2026-09-30T14:30:50",
+    "embedder": "hashing-1024"
+  },
+  "overall": {
+    "n_groups": 10,
+    "mean_sensitivity": 0.4818456762962631,
+    "median_sensitivity": 0.4491939218954786,
+    "sensitivity_ci95": [
+      0.3643347671636942,
+      0.6053594035967108
+    ],
+    "max_sensitivity": 0.7786608012551343,
+    "mean_between_sim": 0.5181543237037369,
+    "mean_within_sim": 0.8100521366561877,
+    "mean_excess_sensitivity": 0.2918978129524508,
+    "mean_lexical_sim": 0.5240989415554661,
+    "mean_exact_match_rate": 0.06888888888888887,
+    "pooled_prompt_output_spearman": 0.8057386863233846,
+    "mean_reference_spread": 0.06673001440092681
+  },
+  "groups": [
+    {
+      "n_variants": 5,
+      "n_samples": 3,
+      "between_sim": 0.559930514108252,
+      "sensitivity": 0.440069485891748,
+      "min_pair_sim": 0.17407765595569785,
+      "std_pair_sim": 0.3342608930506141,
+      "within_sim": 0.8654545454545456,
+      "excess_sensitivity": 0.3055240313462936,
+      "lexical_sim": 0.5297619047619049,
+      "exact_match_rate": 0.3,
+      "length_cv": 0.5163977794943223,
+      "prompt_output_spearman": 0.8638447251622667,
+      "per_variant_mean_sim": [
+        0.6941354330081018,
+        0.6941354330081018,
+        0.6941354330081019,
+        0.5192680433038562,
+        0.19797822821309763
+      ],
+      "most_fragile_variant": 4,
+      "most_robust_variant": 2,
+      "sim_matrix": [
+        [
+          1.0,
+          1.0000000000000002,
+          1.0000000000000002,
+          0.6024640760767094,
+          0.17407765595569785
+        ],
+        [
+          1.0000000000000002,
+          1.0,
+          1.0000000000000002,
+          0.6024640760767094,
+          0.17407765595569785
+        ],
+        [
+          1.0000000000000002,
+          1.0000000000000002,
+          1.0,
+          0.6024640760767094,
+          0.17407765595569785
+        ],
+        [
+          0.6024640760767094,
+          0.6024640760767094,
+          0.6024640760767094,
+          1.0,
+          0.26967994498529685
+        ],
+        [
+          0.17407765595569785,
+          0.17407765595569785,
+          0.17407765595569785,
+          0.26967994498529685,
+          1.0
+        ]
+      ],
+      "pair_prompt_sim": [
+        0.25819888974716115,
+        0.3721042037676254,
+        0.12403473458920845,
+        0.0,
+        0.16012815380508716,
+        0.16012815380508716,
+        0.0,
+        0.15384615384615385,
+        0.12725695259515554,
+        0.12725695259515554
+      ],
+      "pair_output_sim": [
+        1.0000000000000002,
+        1.0000000000000002,
+        0.6024640760767094,
+        0.17407765595569785,
+        1.0000000000000002,
+        0.6024640760767094,
+        0.17407765595569785,
+        0.6024640760767094,
+        0.17407765595569785,
+        0.26967994498529685
+      ],
+      "reference_sim_per_variant": [
+        0.09143952693726172,
+        0.09143952693726172,
+        0.09143952693726172,
+        0.14165750600523963,
+        0.07958789255468206
+      ],
+      "reference_sim_mean": 0.09911279587434138,
+      "reference_sim_min": 0.07958789255468206,
+      "reference_sim_spread": 0.06206961345055757,
+      "id": "fact_photosynthesis",
+      "category": "factual",
+      "prompts": [
+        "What is photosynthesis?",
+        "Explain photosynthesis.",
+        "Can you tell me what photosynthesis is?",
+        "Describe the process of photosynthesis in plants.",
+        "In simple terms, how do plants make food from sunlight?"
+      ],
+      "outputs": [
+        [
+          "Answer: photosynthesis",
+          "Answer: photosynthesis",
+          "Answer: photosynthesis"
+        ],
+        [
+          "Answer: photosynthesis",
+          "Answer: photosynthesis",
+          "Answer: photosynthesis"
+        ],
+        [
+          "Answer: photosynthesis",
+          "Answer: photosynthesis",
+          "Answer: photosynthesis"
+        ],
+        [
+          "Answer: photosynthesis plants",
+          "Answer: photosynthesis plants",
+          "Answer: plants process"
+        ],
+        [
+          "Answer: food plants simple sunlight terms",
+          "Answer: food make plants simple terms",
+          "Answer: food make plants simple sunlight"
+        ]
+      ]
+    },
+    {
+      "n_variants": 5,
+      "n_samples": 3,
+      "between_sim": 0.6133333333333333,
+      "sensitivity": 0.3866666666666667,
+      "min_pair_sim": 0.39999999999999997,
+      "std_pair_sim": 0.21039645117412667,
+      "within_sim": 0.8400000000000001,
+      "excess_sensitivity": 0.2266666666666668,
+      "lexical_sim": 0.6777777777777778,
+      "exact_match_rate": 0.3555555555555555,
+      "length_cv": 0.0,
+      "prompt_output_spearman": 0.8815980264795302,
+      "per_variant_mean_sim": [
+        0.6499999999999999,
+        0.5499999999999999,
+        0.6833333333333332,
+        0.5333333333333333,
+        0.6499999999999999
+      ],
+      "most_fragile_variant": 3,
+      "most_robust_variant": 2,
+      "sim_matrix": [
+        [
+          1.0,
+          0.39999999999999997,
+          0.7999999999999999,
+          0.39999999999999997,
+          1.0
+        ],
+        [
+          0.39999999999999997,
+          1.0,
+          0.6000000000000001,
+          0.7999999999999999,
+          0.39999999999999997
+        ],
+        [
+          0.7999999999999999,
+          0.6000000000000001,
+          1.0,
+          0.5333333333333333,
+          0.7999999999999999
+        ],
+        [
+          0.39999999999999997,
+          0.7999999999999999,
+          0.5333333333333333,
+          1.0,
+          0.39999999999999997
+        ],
+        [
+          1.0,
+          0.39999999999999997,
+          0.7999999999999999,
+          0.39999999999999997,
+          1.0
+        ]
+      ],
+      "pair_prompt_sim": [
+        0.20100756305184242,
+        0.5454545454545454,
+        0.20100756305184242,
+        0.6363636363636365,
+        0.20100756305184242,
+        0.7777777777777777,
+        0.10050378152592121,
+        0.20100756305184242,
+        0.5454545454545454,
+        0.10050378152592121
+      ],
+      "pair_output_sim": [
+        0.39999999999999997,
+        0.7999999999999999,
+        0.39999999999999997,
+        1.0,
+        0.6000000000000001,
+        0.7999999999999999,
+        0.39999999999999997,
+        0.5333333333333333,
+        0.7999999999999999,
+        0.39999999999999997
+      ],
+      "reference_sim_per_variant": [
+        0.26967994498529685,
+        0.13483997249264842,
+        0.22473328748774737,
+        0.13483997249264842,
+        0.26967994498529685
+      ],
+      "reference_sim_mean": 0.20675462448872758,
+      "reference_sim_min": 0.13483997249264842,
+      "reference_sim_spread": 0.13483997249264842,
+      "id": "fact_capital",
+      "category": "factual",
+      "prompts": [
+        "What is the capital of Australia?",
+        "Which city is Australia's capital?",
+        "Name the capital city of Australia.",
+        "Australia's capital is which city?",
+        "Tell me the capital of Australia."
+      ],
+      "outputs": [
+        [
+          "Answer: australia capital",
+          "Answer: australia capital",
+          "Answer: australia capital"
+        ],
+        [
+          "Answer: capital city",
+          "Answer: capital city",
+          "Answer: capital city"
+        ],
+        [
+          "Answer: australia capital",
+          "Answer: capital city",
+          "Answer: australia capital"
+        ],
+        [
+          "Answer: capital city",
+          "Answer: australia's capital",
+          "Answer: capital city"
+        ],
+        [
+          "Answer: australia capital",
+          "Answer: australia capital",
+          "Answer: australia capital"
+        ]
+      ]
+    },
+    {
+      "n_variants": 5,
+      "n_samples": 3,
+      "between_sim": 0.39970958535128076,
+      "sensitivity": 0.6002904146487192,
+      "min_pair_sim": 0.24111311643235148,
+      "std_pair_sim": 0.10201427643065586,
+      "within_sim": 0.776924664602683,
+      "excess_sensitivity": 0.3772150792514022,
+      "lexical_sim": 0.4053014668700944,
+      "exact_match_rate": 0.0,
+      "length_cv": 0.09938079899999065,
+      "prompt_output_spearman": 0.9300954818304988,
+      "per_variant_mean_sim": [
+        0.46007463384111447,
+        0.31180523130583415,
+        0.4531165861623906,
+        0.38301749655736606,
+        0.39053397888969865
+      ],
+      "most_fragile_variant": 1,
+      "most_robust_variant": 0,
+      "sim_matrix": [
+        [
+          1.0,
+          0.31591940147151587,
+          0.6296296296296295,
+          0.4801052898319479,
+          0.4146442144313645
+        ],
+        [
+          0.31591940147151587,
+          1.0,
+          0.31591940147151587,
+          0.24111311643235148,
+          0.3742690058479532
+        ],
+        [
+          0.6296296296296295,
+          0.31591940147151587,
+          1.0,
+          0.45227309911705227,
+          0.41464421443136457
+        ],
+        [
+          0.4801052898319479,
+          0.24111311643235148,
+          0.45227309911705227,
+          1.0,
+          0.3585784808481124
+        ],
+        [
+          0.4146442144313645,
+          0.3742690058479532,
+          0.41464421443136457,
+          0.3585784808481124,
+          1.0
+        ]
+      ],
+      "pair_prompt_sim": [
+        0.28736848324283987,
+        0.6685032174373866,
+        0.4233901974057256,
+        0.3592106040535498,
+        0.26681493838602804,
+        0.1728252824550709,
+        0.3548387096774194,
+        0.428845013935118,
+        0.33351867298253507,
+        0.2765204519281134
+      ],
+      "pair_output_sim": [
+        0.31591940147151587,
+        0.6296296296296295,
+        0.4801052898319479,
+        0.4146442144313645,
+        0.31591940147151587,
+        0.24111311643235148,
+        0.3742690058479532,
+        0.45227309911705227,
+        0.41464421443136457,
+        0.3585784808481124
+      ],
+      "reference_sim_per_variant": [
+        0.167093470609201,
+        0.12725695259515554,
+        0.167093470609201,
+        0.1345345587992625,
+        0.16967593679354073
+      ],
+      "reference_sim_mean": 0.15313087788127216,
+      "reference_sim_min": 0.12725695259515554,
+      "reference_sim_spread": 0.04241898419838519,
+      "id": "reason_train",
+      "category": "reasoning",
+      "prompts": [
+        "A train travels 120 km in 2 hours. What is its average speed?",
+        "If a train covers 120 kilometres in two hours, how fast is it going on average?",
+        "What is the average speed of a train that goes 120 km in 2 hours?",
+        "Calculate the mean speed for a train journey of 120 km lasting 2 hours.",
+        "A train takes two hours to travel 120 km. What speed does it maintain on average?"
+      ],
+      "outputs": [
+        [
+          "Answer: 2 average hours km speed train travels",
+          "Answer: 120 2 hours km speed train travels",
+          "Answer: 120 2 average hours speed train travels"
+        ],
+        [
+          "Answer: 120 average fast going hours if kilometres train two",
+          "Answer: 120 average covers fast going if kilometres train two",
+          "Answer: 120 average covers going hours if kilometres train two"
+        ],
+        [
+          "Answer: 120 2 average goes hours km train",
+          "Answer: 120 2 goes hours km speed train",
+          "Answer: 2 average goes hours km speed train"
+        ],
+        [
+          "Answer: 120 2 hours journey km lasting speed train",
+          "Answer: 120 hours journey km lasting mean speed train",
+          "Answer: 120 2 hours journey km lasting mean speed"
+        ],
+        [
+          "Answer: 120 hours km maintain speed takes train travel two",
+          "Answer: 120 average km maintain speed takes train travel two",
+          "Answer: 120 average hours km speed takes train travel two"
+        ]
+      ]
+    },
+    {
+      "n_variants": 5,
+      "n_samples": 3,
+      "between_sim": 0.3683997380300633,
+      "sensitivity": 0.6316002619699367,
+      "min_pair_sim": 0.16051447078102563,
+      "std_pair_sim": 0.17515356922580422,
+      "within_sim": 0.8551835193514356,
+      "excess_sensitivity": 0.48678378132137223,
+      "lexical_sim": 0.34854472659168223,
+      "exact_match_rate": 0.0,
+      "length_cv": 0.06880209161537815,
+      "prompt_output_spearman": 0.9515151515151514,
+      "per_variant_mean_sim": [
+        0.46113394065343827,
+        0.44399195309471384,
+        0.4390454698483719,
+        0.2039251773195599,
+        0.29390214923423297
+      ],
+      "most_fragile_variant": 3,
+      "most_robust_variant": 0,
+      "sim_matrix": [
+        [
+          1.0,
+          0.6509753537230484,
+          0.6472383080687429,
+          0.20064308847628204,
+          0.34567901234567905
+        ],
+        [
+          0.6509753537230484,
+          1.0,
+          0.554988883074696,
+          0.2222222222222222,
+          0.3477813533588889
+        ],
+        [
+          0.6472383080687429,
+          0.554988883074696,
+          1.0,
+          0.2323209277987099,
+          0.3216337604513384
+        ],
+        [
+          0.20064308847628204,
+          0.2222222222222222,
+          0.2323209277987099,
+          1.0,
+          0.16051447078102563
+        ],
+        [
+          0.34567901234567905,
+          0.3477813533588889,
+          0.3216337604513384,
+          0.16051447078102563,
+          1.0
+        ]
+      ],
+      "pair_prompt_sim": [
+        0.546056396997101,
+        0.6128228590779278,
+        0.14975399991159508,
+        0.42656303784600447,
+        0.5314847358217434,
+        0.1667593364912675,
+        0.35067481155899427,
+        0.21369687880543226,
+        0.37588623078542255,
+        0.1145121634491353
+      ],
+      "pair_output_sim": [
+        0.6509753537230484,
+        0.6472383080687429,
+        0.20064308847628204,
+        0.34567901234567905,
+        0.554988883074696,
+        0.2222222222222222,
+        0.3477813533588889,
+        0.2323209277987099,
+        0.3216337604513384,
+        0.16051447078102563
+      ],
+      "reference_sim_per_variant": [
+        0.24246432248443597,
+        0.15762208124782012,
+        0.14037248126871926,
+        0.15762208124782012,
+        0.14547859349066158
+      ],
+      "reference_sim_mean": 0.16871191194789142,
+      "reference_sim_min": 0.14037248126871926,
+      "reference_sim_spread": 0.10209184121571671,
+      "id": "reason_apples",
+      "category": "reasoning",
+      "prompts": [
+        "Tom has 5 apples, buys 3 more, then eats 2. How many apples does he have now?",
+        "Tom starts with 5 apples. He buys 3 more and eats 2. How many are left?",
+        "How many apples does Tom have if he begins with 5, gets 3 more, and then eats 2?",
+        "Tom had five apples, bought three more and ate two. What is his apple count?",
+        "After owning 5 apples, purchasing 3 further ones and consuming 2, how many apples does Tom hold?"
+      ],
+      "outputs": [
+        [
+          "Answer: 2 3 5 apples buys eats has have many more now then tom",
+          "Answer: 2 3 5 apples buys has have he many more now then tom",
+          "Answer: 2 3 5 apples buys eats has have he many more then tom"
+        ],
+        [
+          "Answer: 2 3 5 apples buys eats he many more starts tom",
+          "Answer: 2 3 apples buys eats he left many more starts tom",
+          "Answer: 2 3 5 apples buys eats he left many more tom"
+        ],
+        [
+          "Answer: 2 3 5 apples eats gets have he if many more then tom",
+          "Answer: 2 3 5 apples begins eats gets he if many more then tom",
+          "Answer: 2 3 5 apples begins eats gets have he if more then tom"
+        ],
+        [
+          "Answer: apple apples ate bought count five his more three tom two",
+          "Answer: apple apples ate bought count five had his more tom two",
+          "Answer: apple apples ate bought count five his more three tom two"
+        ],
+        [
+          "Answer: 2 3 5 after apples consuming further hold many ones purchasing tom",
+          "Answer: 2 3 5 after apples consuming further many ones owning purchasing tom",
+          "Answer: 2 5 after apples consuming further hold many ones owning purchasing tom"
+        ]
+      ]
+    },
+    {
+      "n_variants": 5,
+      "n_samples": 3,
+      "between_sim": 0.24203247790567955,
+      "sensitivity": 0.7579675220943205,
+      "min_pair_sim": 0.13723414779467602,
+      "std_pair_sim": 0.1221640461930775,
+      "within_sim": 0.6279738469827978,
+      "excess_sensitivity": 0.38594136907711823,
+      "lexical_sim": 0.2465079365079365,
+      "exact_match_rate": 0.0,
+      "length_cv": 0.13608276348795434,
+      "prompt_output_spearman": 0.6626170426112704,
+      "per_variant_mean_sim": [
+        0.2949699314722848,
+        0.24084405365101902,
+        0.2258177151469789,
+        0.18271005662675688,
+        0.26582063263135824
+      ],
+      "most_fragile_variant": 3,
+      "most_robust_variant": 0,
+      "sim_matrix": [
+        [
+          1.0,
+          0.19999999999999998,
+          0.2441556735882381,
+          0.1690308509457033,
+          0.5666932013551979
+        ],
+        [
+          0.19999999999999998,
+          1.0,
+          0.3192804962307729,
+          0.28171808490950556,
+          0.16237763346379752
+        ],
+        [
+          0.2441556735882381,
+          0.3192804962307729,
+          1.0,
+          0.14285714285714282,
+          0.1969775479117616
+        ],
+        [
+          0.1690308509457033,
+          0.28171808490950556,
+          0.14285714285714282,
+          1.0,
+          0.13723414779467602
+        ],
+        [
+          0.5666932013551979,
+          0.16237763346379752,
+          0.1969775479117616,
+          0.13723414779467602,
+          1.0
+        ]
+      ],
+      "pair_prompt_sim": [
+        0.08362420100070908,
+        0.12725695259515554,
+        0.16724840200141816,
+        0.3363363969981562,
+        0.13834289277321493,
+        0.09090909090909091,
+        0.07312724241271307,
+        0.06917144638660747,
+        0.16692446522239715,
+        0.07312724241271307
+      ],
+      "pair_output_sim": [
+        0.19999999999999998,
+        0.2441556735882381,
+        0.1690308509457033,
+        0.5666932013551979,
+        0.3192804962307729,
+        0.28171808490950556,
+        0.16237763346379752,
+        0.14285714285714282,
+        0.1969775479117616,
+        0.13723414779467602
+      ],
+      "id": "advice_sleep",
+      "category": "open_ended",
+      "prompts": [
+        "How can I improve my sleep quality?",
+        "Give me tips for sleeping better.",
+        "What should I do to get better sleep at night?",
+        "I have trouble sleeping. Any advice?",
+        "List ways to improve the quality of my sleep."
+      ],
+      "outputs": [
+        [
+          "Answer: improve quality",
+          "Answer: improve sleep",
+          "Answer: improve sleep"
+        ],
+        [
+          "Answer: better sleeping",
+          "Answer: better sleeping",
+          "Answer: sleeping tips"
+        ],
+        [
+          "Answer: better get sleep",
+          "Answer: better get night",
+          "Answer: get night sleep"
+        ],
+        [
+          "Answer: advice have trouble",
+          "Answer: have sleeping trouble",
+          "Answer: have sleeping trouble"
+        ],
+        [
+          "Answer: improve quality ways",
+          "Answer: improve quality sleep",
+          "Answer: quality sleep ways"
+        ]
+      ]
+    },
+    {
+      "n_variants": 5,
+      "n_samples": 3,
+      "between_sim": 0.7070205510753504,
+      "sensitivity": 0.29297944892464955,
+      "min_pair_sim": 0.5903195258039288,
+      "std_pair_sim": 0.08368517242058354,
+      "within_sim": 0.9066924900332427,
+      "excess_sensitivity": 0.19967193895789226,
+      "lexical_sim": 0.7080495711613574,
+      "exact_match_rate": 0.01111111111111111,
+      "length_cv": 0.1328257600693312,
+      "prompt_output_spearman": 0.8060606060606059,
+      "per_variant_mean_sim": [
+        0.7584901936910766,
+        0.7138598618255481,
+        0.652338621355279,
+        0.6531235032796006,
+        0.757290575225249
+      ],
+      "most_fragile_variant": 2,
+      "most_robust_variant": 0,
+      "sim_matrix": [
+        [
+          1.0,
+          0.7715756287522996,
+          0.671472991312934,
+          0.69865626244318,
+          0.8922558922558923
+        ],
+        [
+          0.7715756287522996,
+          1.0,
+          0.6958381826181701,
+          0.6131806189219979,
+          0.7748450170097245
+        ],
+        [
+          0.671472991312934,
+          0.6958381826181701,
+          1.0,
+          0.5903195258039288,
+          0.651723785686083
+        ],
+        [
+          0.69865626244318,
+          0.6131806189219979,
+          0.5903195258039288,
+          1.0,
+          0.7103376059492956
+        ],
+        [
+          0.8922558922558923,
+          0.7748450170097245,
+          0.651723785686083,
+          0.7103376059492956,
+          1.0
+        ]
+      ],
+      "pair_prompt_sim": [
+        0.8491104369775389,
+        0.7888537752439374,
+        0.8738202702238725,
+        0.9873104727162335,
+        0.7513424121426928,
+        0.7715938203480419,
+        0.8359320761228792,
+        0.7195101662848538,
+        0.7765775336314946,
+        0.8621061783874091
+      ],
+      "pair_output_sim": [
+        0.7715756287522996,
+        0.671472991312934,
+        0.69865626244318,
+        0.8922558922558923,
+        0.6958381826181701,
+        0.6131806189219979,
+        0.7748450170097245,
+        0.5903195258039288,
+        0.651723785686083,
+        0.7103376059492956
+      ],
+      "reference_sim_per_variant": [
+        0.2928651234046529,
+        0.2843744692541431,
+        0.21193691911324727,
+        0.23092142225292453,
+        0.2928651234046529
+      ],
+      "reference_sim_mean": 0.26259261148592417,
+      "reference_sim_min": 0.21193691911324727,
+      "reference_sim_spread": 0.08092820429140565,
+      "id": "rag_leave",
+      "category": "rag_style",
+      "prompts": [
+        "Context: Employees receive 20 days of paid leave per year. Up to 5 unused days can be carried forward to the next year.\nQuestion: How many unused leave days can be carried forward?",
+        "Context: Employees receive 20 days of paid leave per year. Up to 5 unused days can be carried forward to the next year.\nQuestion: What is the carry-forward limit for unused leave?",
+        "Context: Employees receive 20 days of paid leave per year. Up to 5 unused days can be carried forward to the next year.\nQuestion: Can I carry over leave I did not use, and if so how much?",
+        "Using only the context below, answer the question.\nContext: Employees receive 20 days of paid leave per year. Up to 5 unused days can be carried forward to the next year.\nQuestion: How many leave days may be carried forward?",
+        "Question: How many unused leave days can be carried forward?\nContext: Employees receive 20 days of paid leave per year. Up to 5 unused days can be carried forward to the next year."
+      ],
+      "outputs": [
+        [
+          "Answer: 20 5 carried context days employees leave many next paid per question receive unused up year",
+          "Answer: 20 5 carried days employees forward leave many next paid per question receive unused up year",
+          "Answer: 20 5 carried context days employees forward leave many next paid per question unused up year"
+        ],
+        [
+          "Answer: 20 5 carried carry context days employees leave limit next paid per question receive unused up year",
+          "Answer: 20 5 carried carry context days employees leave limit next paid per question receive unused up year",
+          "Answer: 5 carried carry context days employees forward leave limit next paid per question receive unused up year"
+        ],
+        [
+          "Answer: 20 5 carried carry context days employees forward if leave much next not over paid per question receive so unused up year",
+          "Answer: 20 5 carried carry context days employees if leave much next not over paid per question receive so unused up use year",
+          "Answer: 20 5 carried carry context days employees if leave much next not over paid per question receive so unused up use year"
+        ],
+        [
+          "Answer: 20 5 answer below carried context days employees forward leave many may next only paid per question receive up using year",
+          "Answer: 20 answer below carried context days employees forward leave many may next only paid per question receive unused up using year",
+          "Answer: 20 5 answer below carried context days employees leave many may next only paid per question receive unused up using year"
+        ],
+        [
+          "Answer: 5 carried context days employees forward leave many next paid per question receive unused up year",
+          "Answer: 20 5 carried context days employees forward leave many next paid per question receive unused year",
+          "Answer: 20 5 carried context days employees leave many next paid per question receive unused up year"
+        ]
+      ]
+    },
+    {
+      "n_variants": 5,
+      "n_samples": 3,
+      "between_sim": 0.7203591642289184,
+      "sensitivity": 0.27964083577108156,
+      "min_pair_sim": 0.6390742296910032,
+      "std_pair_sim": 0.08195685308150014,
+      "within_sim": 0.9178069393765206,
+      "excess_sensitivity": 0.19744777514760214,
+      "lexical_sim": 0.7220911821256648,
+      "exact_match_rate": 0.0,
+      "length_cv": 0.05499613322031964,
+      "prompt_output_spearman": 0.8909090909090909,
+      "per_variant_mean_sim": [
+        0.7672746350925586,
+        0.7265373308144815,
+        0.6898891996750857,
+        0.6529095553781152,
+        0.7651851001843508
+      ],
+      "most_fragile_variant": 3,
+      "most_robust_variant": 0,
+      "sim_matrix": [
+        [
+          1.0,
+          0.7678370261874075,
+          0.7303496994394139,
+          0.6482686511996982,
+          0.9226431635437142
+        ],
+        [
+          0.7678370261874075,
+          1.0,
+          0.6856411438016045,
+          0.6716804912326533,
+          0.780990662036261
+        ],
+        [
+          0.7303496994394139,
+          0.6856411438016045,
+          1.0,
+          0.6390742296910032,
+          0.7044917257683215
+        ],
+        [
+          0.6482686511996982,
+          0.6716804912326533,
+          0.6390742296910032,
+          1.0,
+          0.6526148493891065
+        ],
+        [
+          0.9226431635437142,
+          0.780990662036261,
+          0.7044917257683215,
+          0.6526148493891065,
+          1.0
+        ]
+      ],
+      "pair_prompt_sim": [
+        0.7976785411773423,
+        0.7993762644652779,
+        0.7164082770314917,
+        0.9873950221004559,
+        0.7742827254895828,
+        0.7753580193413622,
+        0.7841951622344838,
+        0.69539610841796,
+        0.7871409890517139,
+        0.7042354936279318
+      ],
+      "pair_output_sim": [
+        0.7678370261874075,
+        0.7303496994394139,
+        0.6482686511996982,
+        0.9226431635437142,
+        0.6856411438016045,
+        0.6716804912326533,
+        0.780990662036261,
+        0.6390742296910032,
+        0.7044917257683215,
+        0.6526148493891065
+      ],
+      "reference_sim_per_variant": [
+        0.2934391163708816,
+        0.30400886593029397,
+        0.286259482957836,
+        0.2732919512141578,
+        0.2706646262797127
+      ],
+      "reference_sim_mean": 0.28553280855057644,
+      "reference_sim_min": 0.2706646262797127,
+      "reference_sim_spread": 0.03334423965058125,
+      "id": "rag_refund",
+      "category": "rag_style",
+      "prompts": [
+        "Context: Refunds are available within 30 days of purchase with proof of receipt. Digital goods are non-refundable once downloaded.\nQuestion: Can I get a refund for an e-book I already downloaded 10 days ago?",
+        "Context: Refunds are available within 30 days of purchase with proof of receipt. Digital goods are non-refundable once downloaded.\nQuestion: Is a downloaded e-book, bought 10 days ago, refundable?",
+        "Context: Refunds are available within 30 days of purchase with proof of receipt. Digital goods are non-refundable once downloaded.\nQuestion: I downloaded an e-book 10 days back. Will I get my money back?",
+        "Using only the context below, answer the question.\nContext: Refunds are available within 30 days of purchase with proof of receipt. Digital goods are non-refundable once downloaded.\nQuestion: Can a downloaded e-book be refunded after 10 days?",
+        "Question: Can I get a refund for an e-book I already downloaded 10 days ago?\nContext: Refunds are available within 30 days of purchase with proof of receipt. Digital goods are non-refundable once downloaded."
+      ],
+      "outputs": [
+        [
+          "Answer: 10 30 already available book context days digital downloaded e get goods non once proof purchase question receipt refund refundable refunds within",
+          "Answer: 10 30 ago already available book context days digital downloaded e get goods non once proof purchase question receipt refund refundable refunds",
+          "Answer: 10 ago already available book context days digital downloaded e get goods non once proof purchase question receipt refund refundable refunds within"
+        ],
+        [
+          "Answer: 10 30 ago available book bought context days digital downloaded e goods non once proof purchase question refundable refunds within",
+          "Answer: 10 30 ago available book bought context days digital downloaded e goods non once proof purchase question receipt refundable within",
+          "Answer: 10 ago available book bought context days digital downloaded e goods non once proof purchase question receipt refundable refunds within"
+        ],
+        [
+          "Answer: 10 30 available back book days digital downloaded e get goods money non once proof purchase question receipt refundable refunds will within",
+          "Answer: 10 30 available back book context days digital downloaded e get goods money non once proof purchase question receipt refundable will within",
+          "Answer: 10 30 available back book context days digital downloaded e get money non once proof purchase question receipt refundable refunds will within"
+        ],
+        [
+          "Answer: 10 30 after available below book context days digital downloaded e goods non once only proof purchase question receipt refundable refunded refunds using within",
+          "Answer: 10 30 after answer available below book context days digital downloaded e goods non once only purchase question receipt refundable refunded refunds using within",
+          "Answer: 10 30 after answer available below book context days digital downloaded e goods non only proof purchase question receipt refundable refunded refunds using within"
+        ],
+        [
+          "Answer: 10 30 ago already available book context days digital e get goods non once proof purchase question receipt refund refundable refunds within",
+          "Answer: 10 30 ago already available book context days digital downloaded e get goods non once proof purchase question refund refundable refunds within",
+          "Answer: 10 30 ago already available book context days digital downloaded e goods non once proof purchase question receipt refund refundable refunds within"
+        ]
+      ]
+    },
+    {
+      "n_variants": 5,
+      "n_samples": 3,
+      "between_sim": 0.8077370321588349,
+      "sensitivity": 0.19226296784116514,
+      "min_pair_sim": 0.7543859649122808,
+      "std_pair_sim": 0.02836853948071295,
+      "within_sim": 0.9258865516507553,
+      "excess_sensitivity": 0.11814951949192043,
+      "lexical_sim": 0.8058961676995604,
+      "exact_match_rate": 0.0,
+      "length_cv": 0.027922816319208513,
+      "prompt_output_spearman": 0.34545454545454546,
+      "per_variant_mean_sim": [
+        0.8208869502277638,
+        0.8063485706402385,
+        0.7762262693829156,
+        0.8167024544568906,
+        0.8185209160863658
+      ],
+      "most_fragile_variant": 2,
+      "most_robust_variant": 0,
+      "sim_matrix": [
+        [
+          1.0,
+          0.8166859591299289,
+          0.7803594806074128,
+          0.8427101950193329,
+          0.843792166154381
+        ],
+        [
+          0.8166859591299289,
+          1.0,
+          0.7543859649122808,
+          0.8268094579745442,
+          0.8275129005441995
+        ],
+        [
+          0.7803594806074128,
+          0.7543859649122808,
+          1.0,
+          0.7823355995993854,
+          0.7878240324125831
+        ],
+        [
+          0.8427101950193329,
+          0.8268094579745442,
+          0.7823355995993854,
+          1.0,
+          0.8149545652342998
+        ],
+        [
+          0.843792166154381,
+          0.8275129005441995,
+          0.7878240324125831,
+          0.8149545652342998,
+          1.0
+        ]
+      ],
+      "pair_prompt_sim": [
+        0.9033206870241781,
+        0.9214669979334227,
+        0.9440999837692599,
+        0.9205015102175018,
+        0.8689076552330975,
+        0.8901247930748084,
+        0.8734394316974401,
+        0.9025532472999371,
+        0.8688401498727125,
+        0.9016401511262843
+      ],
+      "pair_output_sim": [
+        0.8166859591299289,
+        0.7803594806074128,
+        0.8427101950193329,
+        0.843792166154381,
+        0.7543859649122808,
+        0.8268094579745442,
+        0.8275129005441995,
+        0.7823355995993854,
+        0.7878240324125831,
+        0.8149545652342998
+      ],
+      "reference_sim_per_variant": [
+        0.24923167666750687,
+        0.26158373589004197,
+        0.2757233972895037,
+        0.27860705113590306,
+        0.287889011391687
+      ],
+      "reference_sim_mean": 0.27060697447492854,
+      "reference_sim_min": 0.24923167666750687,
+      "reference_sim_spread": 0.03865733472418012,
+      "id": "summarise_bike_lanes",
+      "category": "summarisation",
+      "prompts": [
+        "Summarize in one sentence: The city council voted on Tuesday to build 40 kilometres of new protected bike lanes over the next three years, funded by a transport levy, in order to cut traffic congestion and emissions.",
+        "Give a one-sentence summary of the following text: The city council voted on Tuesday to build 40 kilometres of new protected bike lanes over the next three years, funded by a transport levy, in order to cut traffic congestion and emissions.",
+        "TL;DR in a single sentence: The city council voted on Tuesday to build 40 kilometres of new protected bike lanes over the next three years, funded by a transport levy, in order to cut traffic congestion and emissions.",
+        "Condense this into one sentence: The city council voted on Tuesday to build 40 kilometres of new protected bike lanes over the next three years, funded by a transport levy, in order to cut traffic congestion and emissions.",
+        "In one sentence, what does this text say? The city council voted on Tuesday to build 40 kilometres of new protected bike lanes over the next three years, funded by a transport levy, in order to cut traffic congestion and emissions."
+      ],
+      "outputs": [
+        [
+          "Answer: 40 bike build city congestion council cut emissions funded kilometres lanes new next one order over protected sentence summarize three traffic transport tuesday voted years",
+          "Answer: 40 bike build city congestion council cut emissions funded kilometres lanes levy new next one order over sentence summarize three traffic transport tuesday voted years",
+          "Answer: 40 bike build city congestion council cut emissions funded kilometres lanes levy new next one order over protected sentence summarize three traffic tuesday voted years"
+        ],
+        [
+          "Answer: 40 bike city congestion council cut emissions following funded kilometres lanes levy new next one order over protected sentence summary text three traffic transport tuesday voted years",
+          "Answer: 40 build city congestion council cut emissions following funded kilometres lanes levy new next one order over protected sentence summary text three traffic transport tuesday voted years",
+          "Answer: 40 bike build city congestion council cut following funded kilometres lanes levy new next one order over protected sentence summary text three traffic transport tuesday voted years"
+        ],
+        [
+          "Answer: 40 bike build city congestion council cut dr emissions funded kilometres lanes levy new next order over protected sentence single three traffic transport tuesday voted years",
+          "Answer: 40 bike build city congestion council cut dr emissions funded kilometres levy new next order over protected sentence single three tl traffic transport tuesday voted years",
+          "Answer: 40 bike build city congestion council cut dr emissions funded kilometres lanes levy next order over protected sentence single three tl traffic transport tuesday voted years"
+        ],
+        [
+          "Answer: 40 bike build city condense congestion council cut emissions funded kilometres lanes levy new next one order over protected sentence three traffic transport voted years",
+          "Answer: 40 build city condense congestion council cut emissions funded kilometres lanes levy new next one order over protected sentence three traffic transport tuesday voted years",
+          "Answer: 40 bike build city condense congestion council cut funded kilometres lanes levy new next one order over protected sentence three traffic transport tuesday voted years"
+        ],
+        [
+          "Answer: 40 bike build city congestion council cut emissions funded kilometres lanes new next one order over protected say sentence text three traffic transport tuesday voted years",
+          "Answer: 40 bike build city congestion council cut emissions funded kilometres lanes levy new next one order over protected say sentence text three transport tuesday voted years",
+          "Answer: 40 bike build city congestion council cut emissions funded kilometres lanes levy new next order over protected say sentence text three traffic transport tuesday voted years"
+        ]
+      ]
+    },
+    {
+      "n_variants": 5,
+      "n_samples": 3,
+      "between_sim": 0.5416816421007908,
+      "sensitivity": 0.45831835789920916,
+      "min_pair_sim": 0.37037037037037024,
+      "std_pair_sim": 0.10535200271393946,
+      "within_sim": 0.7416006216006215,
+      "excess_sensitivity": 0.19991897949983062,
+      "lexical_sim": 0.5570498637165305,
+      "exact_match_rate": 0.02222222222222222,
+      "length_cv": 0.12777531299998798,
+      "prompt_output_spearman": 0.13414883533020291,
+      "per_variant_mean_sim": [
+        0.623257034589343,
+        0.5748572835106245,
+        0.5699135283324357,
+        0.43987370906463785,
+        0.500506655006913
+      ],
+      "most_fragile_variant": 3,
+      "most_robust_variant": 0,
+      "sim_matrix": [
+        [
+          1.0,
+          0.7061599195615433,
+          0.6969696969696969,
+          0.5103493078392205,
+          0.5795492139869114
+        ],
+        [
+          0.7061599195615433,
+          1.0,
+          0.6225357185608342,
+          0.4376257563574312,
+          0.5331077395626889
+        ],
+        [
+          0.6969696969696969,
+          0.6225357185608342,
+          1.0,
+          0.44114940169152966,
+          0.5189992961076819
+        ],
+        [
+          0.5103493078392205,
+          0.4376257563574312,
+          0.44114940169152966,
+          1.0,
+          0.37037037037037024
+        ],
+        [
+          0.5795492139869114,
+          0.5331077395626889,
+          0.5189992961076819,
+          0.37037037037037024,
+          1.0
+        ]
+      ],
+      "pair_prompt_sim": [
+        0.6831451551331931,
+        0.6276319032402828,
+        0.6127329673850138,
+        0.5869435049548024,
+        0.6623128326991637,
+        0.6831451551331931,
+        0.6176778426977825,
+        0.6623128326991637,
+        0.7045475600307762,
+        0.5869435049548025
+      ],
+      "pair_output_sim": [
+        0.7061599195615433,
+        0.6969696969696969,
+        0.5103493078392205,
+        0.5795492139869114,
+        0.6225357185608342,
+        0.4376257563574312,
+        0.5331077395626889,
+        0.44114940169152966,
+        0.5189992961076819,
+        0.37037037037037024
+      ],
+      "reference_sim_per_variant": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.039489925183939484
+      ],
+      "reference_sim_mean": 0.007897985036787897,
+      "reference_sim_min": 0.0,
+      "reference_sim_spread": 0.039489925183939484,
+      "id": "code_explain",
+      "category": "code",
+      "prompts": [
+        "Explain what this Python code does: sum(x*x for x in range(5))",
+        "What does the Python expression sum(x*x for x in range(5)) compute?",
+        "Describe the behaviour of `sum(x*x for x in range(5))` in Python.",
+        "Walk me through the Python snippet sum(x*x for x in range(5)).",
+        "What is the result of, and idea behind, sum(x*x for x in range(5)) in Python?"
+      ],
+      "outputs": [
+        [
+          "Answer: 5 python range sum x",
+          "Answer: 5 code python range x",
+          "Answer: 5 python range sum x"
+        ],
+        [
+          "Answer: 5 expression python range sum x",
+          "Answer: 5 compute expression python range x",
+          "Answer: 5 expression python range sum x"
+        ],
+        [
+          "Answer: 5 behaviour python sum x",
+          "Answer: 5 python range sum x",
+          "Answer: behaviour python range sum x"
+        ],
+        [
+          "Answer: python range snippet sum through walk x",
+          "Answer: 5 python snippet sum through walk x",
+          "Answer: 5 python range snippet through walk x"
+        ],
+        [
+          "Answer: 5 behind idea python range sum x",
+          "Answer: 5 behind idea python range result x",
+          "Answer: 5 behind idea range result sum x"
+        ]
+      ]
+    },
+    {
+      "n_variants": 5,
+      "n_samples": 3,
+      "between_sim": 0.22133919874486577,
+      "sensitivity": 0.7786608012551343,
+      "min_pair_sim": 0.12197896393304092,
+      "std_pair_sim": 0.062855645886921,
+      "within_sim": 0.642998187509275,
+      "excess_sensitivity": 0.4216589887644092,
+      "lexical_sim": 0.24000881834215165,
+      "exact_match_rate": 0.0,
+      "length_cv": 0.1739130434782609,
+      "prompt_output_spearman": 0.07878787878787878,
+      "per_variant_mean_sim": [
+        0.26390800676165516,
+        0.1732580844138481,
+        0.18966198982915794,
+        0.24740013568414598,
+        0.2324677770355214
+      ],
+      "most_fragile_variant": 1,
+      "most_robust_variant": 0,
+      "sim_matrix": [
+        [
+          1.0,
+          0.19047619047619044,
+          0.20329827322173483,
+          0.3174603174603174,
+          0.3443972458883779
+        ],
+        [
+          0.19047619047619044,
+          1.0,
+          0.12197896393304092,
+          0.2063492063492063,
+          0.17422797689695477
+        ],
+        [
+          0.20329827322173483,
+          0.12197896393304092,
+          1.0,
+          0.24395792786608184,
+          0.1894127942957745
+        ],
+        [
+          0.3174603174603174,
+          0.2063492063492063,
+          0.24395792786608184,
+          1.0,
+          0.2218330910609785
+        ],
+        [
+          0.3443972458883779,
+          0.17422797689695477,
+          0.1894127942957745,
+          0.2218330910609785,
+          1.0
+        ]
+      ],
+      "pair_prompt_sim": [
+        0.2727272727272727,
+        0.14625448482542613,
+        0.16724840200141816,
+        0.46709936649691375,
+        0.07312724241271307,
+        0.08362420100070908,
+        0.23354968324845687,
+        0.06726727939963124,
+        0.12524485821702988,
+        0.07161148740394328
+      ],
+      "pair_output_sim": [
+        0.19047619047619044,
+        0.20329827322173483,
+        0.3174603174603174,
+        0.3443972458883779,
+        0.12197896393304092,
+        0.2063492063492063,
+        0.17422797689695477,
+        0.24395792786608184,
+        0.1894127942957745,
+        0.2218330910609785
+      ],
+      "id": "list_exercise",
+      "category": "instruction",
+      "prompts": [
+        "List three benefits of regular exercise.",
+        "Name 3 benefits of exercising regularly.",
+        "What are three advantages of working out consistently?",
+        "Give me three reasons to exercise regularly.",
+        "Provide three health benefits of regular physical activity."
+      ],
+      "outputs": [
+        [
+          "Answer: exercise regular three",
+          "Answer: benefits exercise regular",
+          "Answer: exercise regular three"
+        ],
+        [
+          "Answer: 3 exercising regularly",
+          "Answer: benefits exercising regularly",
+          "Answer: 3 benefits exercising"
+        ],
+        [
+          "Answer: consistently out three working",
+          "Answer: advantages consistently three working",
+          "Answer: advantages consistently out three"
+        ],
+        [
+          "Answer: reasons regularly three",
+          "Answer: reasons regularly three",
+          "Answer: exercise reasons three"
+        ],
+        [
+          "Answer: activity health physical regular three",
+          "Answer: benefits health physical regular three",
+          "Answer: activity benefits health physical three"
+        ]
+      ]
+    }
+  ]
+}
